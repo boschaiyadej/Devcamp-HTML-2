@@ -1,11 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register Form</title>
 </head>
+
 <body>
-    
+    <div class="form-container">
+        <form id="registerForm">
+            <fieldset>
+                <legend>Register Form</legend>
+
+                <table>
+                    <!-- first name -->
+                    <tr>
+                        <td><label for="firstname">Firstname:</label></td>
+                        <td><input type="text" id="firstname" name="firstname" /></td>
+                    </tr>
+
+                    <!-- last name -->
+                    <tr>
+                        <td><label for="lastname">Lastname:</label></td>
+                        <td><input type="text" id="lastname" name="lastname" /></td>
+                    </tr>
+
+                    <!-- password -->
+                    <tr>
+                        <td><label for="password">Password:</label></td>
+                        <td><input type="password" id="password" name="password" /></td>
+                    </tr>
+
+                    <!-- confirm password -->
+                    <tr>
+                        <td><label for="confirm-password">Confirm Password:</label></td>
+                        <td><input type="password" id="confirm_password" name="confirm_password" /></td>
+                    </tr>
+
+                    <!-- email -->
+                    <tr>
+                        <td><label for="email">Email:</label></td>
+                        <td><input type="email" id="email" name="email" /></td>
+                    </tr>
+
+                    <!-- confirm email -->
+                    <tr>
+                        <td><label for="confirm_email">Confirm Email:</label></td>
+                        <td><input type="email" id="confirm_email" name="confirm_email" /></td>
+                    </tr>
+
+                    <!-- birthday -->
+                    <tr>
+                        <td><label for="year">Birthday:</label></td>
+                        <td><select id="day" name="day"></select>
+                            <select id="mouth" name="mouth"></select>
+                            <select id="year" name="year"></select>
+                        </td>
+                    </tr>
+
+                    <!-- gender -->
+                    <tr>
+                        <td><label for="gender">Gender</label></td>
+                        <td><input type="radio" name="gender" value="male" checked />
+                            Male
+                            </label><label>
+                                <input type="radio" name="gender" value="female" />
+                                Female
+                            </label></td>
+                    </tr>
+                </table>
+
+                <!-- button submit and reset -->
+                <div class="button-container">
+                    <input type="submit" value="Submit" />
+                    <input type="reset" value="Reset" />
+                </div>
+            </fieldset>
+        </form>
+    </div>
 </body>
+
 </html>
