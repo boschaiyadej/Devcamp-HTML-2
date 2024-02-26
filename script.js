@@ -29,30 +29,30 @@ for (let i = 1980; i <= 2005; i++) {
 
 // validation password and email
 document.addEventListener("DOMContentLoaded", function () {
-    const form = document.getElementById("registerForm");
-  
-    form.addEventListener("submit", function (event) {
-      event.preventDefault(); // Prevent the form from submitting
-  
-      // Perform validation checks
-      const password = document.getElementById("password").value;
-      const confirmPassword = document.getElementById("confirm_password").value;
-      const email = document.getElementById("email").value;
-      const confirmEmail = document.getElementById("confirm_email").value;
-  
-      // Validate password
-      if (password !== confirmPassword) {
-        alert("Passwords do not match");
-        return;
-      }
-  
-      // Validate email
-      if (email !== confirmEmail) {
-        alert("Email do not match");
-        return;
-      }
-  
-      // If all validations pass, you can submit the form
-      form.submit();
-    });
+  const form = document.getElementById("registerForm");
+
+  form.addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent the form from submitting
+
+    // Perform validation checks
+    const password = document.getElementById("password").value;
+    const confirmPassword = document.getElementById("confirm_password").value;
+    const email = document.getElementById("email").value;
+    const confirmEmail = document.getElementById("confirm_email").value;
+
+    // Validate password
+    if (password !== confirmPassword) {
+      alert("Passwords do not match");
+      return;
+    }
+
+    // Validate email
+    if (email !== confirmEmail) {
+      alert("Email do not match");
+      return;
+    }
+
+    // If all validations pass, you can submit the form
+    form.submit();
   });
+});
