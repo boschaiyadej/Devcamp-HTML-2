@@ -1,0 +1,22 @@
+form {
+    width: 80%;
+    max-width: 600px;
+}
+
+table {
+    margin: 0 auto;
+}
+
+td label {
+    margin-right: 30px;
+}
+
+.button-container, .form-container {
+    display: flex;
+    justify-content: center;
+}
+
+.button-container input[type="submit"],
+.button-container input[type="reset"] {
+    margin: 0 2px;
+}
